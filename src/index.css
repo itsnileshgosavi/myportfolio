@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+#root {
+  @apply min-h-screen bg-white dark:bg-[#121212];
+}
+
+.active {
+  @apply !text-blue-800 font-extrabold;
+}
