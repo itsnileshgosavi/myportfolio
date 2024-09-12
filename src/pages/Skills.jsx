@@ -1,6 +1,6 @@
 import GradualSpacing from "@/components/magicui/gradual-spacing";
 import IconCloud from "@/components/magicui/icon-cloud";
-
+import { SkillList } from "@/components/skilllist";
 
 const slugs = [
   "typescript",
@@ -24,15 +24,15 @@ const slugs = [
 
 export function Skills() {
   return (
-    <div className="flex justify-center flex-col items-center">
+    <div className="flex justify-center flex-col ">
       <h1 className="text-4xl dark:text-white my-5">
         <GradualSpacing text="My Skills" />
       </h1>
-      <div className="flex">
-        <div className="skilllist">
-
+      <div className="flex justify-around flex-col md:flex-row">
+        <div className="skilllist order-last">
+          <SkillList />
         </div>
-      <IconCloud iconSlugs={slugs} />
+        <IconCloud iconSlugs={slugs} />
       </div>
     </div>
   );

@@ -7,6 +7,9 @@ import { useTheme } from "@/components/Theme-Provider";
 import { useEffect, useState } from "react";
 import ShineBorder from "@/components/magicui/shine-border";
 import { FadeText } from "@/components/magicui/fade-text";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+
 
 export default function Home() {
   const { theme } = useTheme();
@@ -47,6 +50,7 @@ export default function Home() {
           className="text-md dark:text-gray-100 text-start"
         />
 
+        <div className="flex items-center space-x-5">
         <a
           href="https://drive.google.com/file/d/1PaA_NjeQ81bxLs64YQFr1iDMpumGrZHT/view?usp=sharing"
           target="_blank"
@@ -59,6 +63,10 @@ export default function Home() {
             </span>
           </ShimmerButton>
         </a>
+        <Link to="/about">
+          <Button className="py-4 md:py-6 bg-[#FD6F00] text-md md:text-lg hover:bg-orange-800 rounded-3xl">More About Me</Button>
+        </Link>
+        </div>
       </div>
       <Particles
         className="absolute inset-0"
