@@ -7,10 +7,10 @@ import { useEffect, useState } from "react"
 function Projects() {
     const { pathname } = useLocation()
     const [filteredProjects, setFilteredProjects] = useState(projects);
-    const [active, setActive] = useState("all");
+    const [active, setActive] = useState("all");//maintaining active state to change the styling of navbar items
     useEffect(() => {
         if(pathname === "/projects") {
-            setFilteredProjects(projects);
+            setFilteredProjects(projects);//setting filtered projects based on pathname
             setActive("all")
         }else if(pathname === "/projects/react") {
             setFilteredProjects(projects.filter(project => project.category === "react"))

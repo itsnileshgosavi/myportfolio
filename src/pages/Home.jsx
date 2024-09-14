@@ -12,8 +12,8 @@ import { Button } from "@/components/ui/button";
 
 
 export default function Home() {
-  const { theme } = useTheme();
-  const [color, setColor] = useState("#ffffff");
+  const { theme } = useTheme();// get theme from context
+  const [color, setColor] = useState("#ffffff");// maintaining color state to change color of particles
 
   useEffect(() => {
     setColor(theme === "dark" ? "#ffffff" : "#000000");

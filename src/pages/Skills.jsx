@@ -29,7 +29,7 @@ export function Skills() {
         <GradualSpacing text="My Skills" />
       </h1>
       <div className="flex justify-around flex-col md:flex-row">
-        <div className="skilllist order-last">
+        <div className="order-last">
           <SkillList />
         </div>
         <IconCloud iconSlugs={slugs} />

@@ -5,7 +5,7 @@ import { AnimatedList } from "@/components/magicui/animated-list";
 
 
 
-let notifications = [
+let skills = [
   {
     name: "Javascript",
     description: "Advanced",
@@ -120,9 +120,9 @@ let notifications = [
   },
 ];
 
-notifications = Array.from({ length: 10 }, () => notifications).flat();
+skills = Array.from({ length: 10 }, () => skills).flat();
 
-const Notification = ({ name, description, icon, color, time }) => {
+const Skill = ({ name, description, icon, color, time }) => {
   return (
     <figure
       className={cn(
@@ -167,8 +167,8 @@ export function SkillList({ className }) {
       )}
     >
       <AnimatedList delay={1500}>
-        {notifications.map((item, idx) => (
-          <Notification {...item} key={idx} />
+        {skills.map((item, idx) => (
+          <Skill {...item} key={idx} />
         ))}
       </AnimatedList>
     </div>

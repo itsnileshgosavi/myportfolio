@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/Theme-Provider";
 
 function ErrorPage() {
-    const { theme } = useTheme();
+    const { theme } = useTheme();// get theme from context
   const error = useRouteError(); // returns an object with error data
   return (
     <div className={`flex justify-center items-center flex-col h-screen dark:bg-gray-900 ${theme=="light" ? "bg-gray-900" : "bg-white"}`}>

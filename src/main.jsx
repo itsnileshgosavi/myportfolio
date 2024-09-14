@@ -13,7 +13,7 @@ import About from './components/About.jsx'
 import path from 'path'
 import ProjectDetails from './pages/ProjectDetails.jsx'
 
-
+// Router configuration
 const appRouter = createBrowserRouter([
   {
     path: '/',

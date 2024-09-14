@@ -6,7 +6,7 @@ const StackList = ({stack}) => {
       {stack.map((item, index) => (
         <div
           key={index}
-          className="w-fit h-6 bg-blue-500 px-3 py-5 rounded-full mr-2 flex justify-center items-center"
+          className="w-fit text-white shadow-2xl border hover:scale-105 transition-all duration-300 cursor-default h-4 bg-blue-500 text-sm px-2 py-4 rounded-full mx-1 flex justify-center items-center"
         >
           <span>{item}</span>
         </div>
