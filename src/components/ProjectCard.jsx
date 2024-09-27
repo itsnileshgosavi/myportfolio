@@ -11,7 +11,7 @@ export function ProjectCard(props) {
   return (
     <div className="h-[500px] w-[350px] m-3">
       <MagicCard
-        className="cursor-pointer h-full w-full"
+        className="cursor-pointer h-full w-full px-3"
         gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
       >
        <div className="flex flex-col justify-between h-full w-full group">
