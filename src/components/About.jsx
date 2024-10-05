@@ -3,7 +3,6 @@ import { cn } from '@/lib/utils'
 import GradualSpacing from './magicui/gradual-spacing'
 import GridPattern from './magicui/animated-grid-pattern'
 
-
 const About = () => {
   return (
     <div className='flex flex-col overflow-hidden pb-10'>
@@ -15,7 +14,6 @@ const About = () => {
         <GradualSpacing text="About Me" />
       </div>
       <div className='flex justify-around min-h-[75vh] flex-col md:flex-row'>
-        
         <div className='flex flex-col justify-center space-y-5'>
           <h2 className='text-xl font-extralight text-black dark:text-white'>Education</h2>
           <h1 className='text-5xl font-bold text-orange-700 uppercase'>My Education</h1>
@@ -40,7 +38,6 @@ const About = () => {
         </div>
       </div>
       <div className='flex justify-around min-h-[75vh] flex-col md:flex-row'>
-     
         <div className='flex flex-col justify-center space-y-5 md:order-last order-first'>
           <h2 className='text-xl font-extralight  text-black dark:text-white'>Experience</h2>
           <h1 className='text-5xl font-bold text-orange-700 uppercase'>My Work Experience</h1>
@@ -64,7 +61,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      
     </div>
   )
 }

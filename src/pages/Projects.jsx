@@ -4,6 +4,7 @@ import ProjectsNavbar from "@/components/ProjectsNavbar"
 import { projects } from "@/lib/mockdata"
 import { useLocation } from "react-router-dom"
 import { useEffect, useState } from "react"
+import BlurFade from "@/components/magicui/blur-fade";
 function Projects() {
     const { pathname } = useLocation()
     const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -33,9 +34,9 @@ function Projects() {
             </div>
             <ProjectsNavbar active={active} />
             <div className="flex flex-wrap mt-10 justify-center">
-                {filteredProjects.map((project) => (
+                {filteredProjects.map((project, idx) => (
+                    <BlurFade key={project.id} delay={0.25 + idx * 0.05} inView>
                     <ProjectCard
-                        key={project.id}
                         name={project.name}
                         description={project.description}
                         github={project.github}
@@ -43,6 +44,7 @@ function Projects() {
                         technologies={project.technologies}
                         live={project.live}
                     />
+                    </BlurFade>
                 ))}
             </div>
         </div>

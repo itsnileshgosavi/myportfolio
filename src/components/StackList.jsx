@@ -2,13 +2,13 @@ import React from 'react'
 
 const StackList = ({stack}) => {
   return (
-    <div className='flex'>
+    <div className='flex flex-wrap gap-2'>
       {stack.map((item, index) => (
         <div
           key={index}
-          className="w-fit text-white shadow-2xl border hover:scale-105 transition-all duration-300 cursor-default h-4 bg-blue-500 text-sm px-2 py-4 rounded-full mx-1 flex justify-center items-center"
+          className="inline-flex items-center justify-center px-3 py-1 text-sm font-medium text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700 transition-all duration-300 cursor-default"
         >
-          <span>{item}</span>
+          {item}
         </div>
       ))}
     </div>

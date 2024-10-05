@@ -9,6 +9,7 @@ import ShineBorder from "@/components/magicui/shine-border";
 import { FadeText } from "@/components/magicui/fade-text";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import Socials from "@/components/Socials";
 
 
 export default function Home() {
@@ -16,10 +17,17 @@ export default function Home() {
   const [color, setColor] = useState("#ffffff");// maintaining color state to change color of particles
 
   useEffect(() => {
-    setColor(theme === "dark" ? "#ffffff" : "#000000");
+    console.log(theme);
+    if (theme === "dark") {
+      setColor("#ffffff");
+    }else if(theme === "system" && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+      setColor("#ffffff");
+    } else {
+      setColor("#000000");
+    }
   }, [theme]);
   return (
-    <div className="relative flex min-h-screen w-full flex-col md:flex-row items-center justify-center overflow-hidden rounded-lg border bg-background  p-20 md:shadow-xl space-x-10">
+    <div className="relative flex min-h-screen  flex-col md:flex-row items-center justify-center overflow-hidden rounded-lg border bg-background  p-20 md:shadow-xl space-x-10">
       <ShineBorder
         className="mb-10 md:rounded-full w-72 h-72 p-0 overflow-hidden border md:shadow-xl"
         color={["#FD6F00", "#FE8FB5", "#FFBE7B"]}
@@ -30,7 +38,7 @@ export default function Home() {
           className="w-full h-full object-cover"
         />
       </ShineBorder>
-      <div className="z-10 flex justify-center flex-col items-start whitespace-pre-wrap text-left font-medium tracking-tighter text-black  dark:text-white space-y-3">
+      <div className="z-10 flex justify-center flex-col items-start space-y-5 max-w-lg text-wrap whitespace-pre-wrap text-left font-medium tracking-tighter text-black  dark:text-white font-mono">
         <GradualSpacing text={"Hello, I am"} />
         <GradualSpacing
           text={"Nilesh Gosavi"}
@@ -42,21 +50,19 @@ export default function Home() {
           className={"text-lg md:text-4xl"}
         />
         <FadeText
-          text="Dedicated Full Stack Developer specializing in the MERN stack, passionate about contributing to open-source projects and"
+          text="Dedicated Full Stack Developer specializing in the MERN stack, passionate about contributing to open-source projects and continuously expanding technical skills."
           className="text-md dark:text-gray-100 text-start"
         />
-        <FadeText
-          text="continuously expanding technical skills."
-          className="text-md dark:text-gray-100 text-start"
-        />
-
+        <Socials />
         <div className="flex items-center space-x-5">
         <a
           href="https://drive.google.com/file/d/1PaA_NjeQ81bxLs64YQFr1iDMpumGrZHT/view?usp=sharing"
           target="_blank"
         >
-          <ShimmerButton className="my-5 dark:text-white border-1 shadow-2xl justify-self-end"
-          ShimmerColor="#FD6F00"
+          <ShimmerButton 
+            className="my-5 bg-[#FD6F00] text-white border-1 shadow-2xl justify-self-end"
+            shimmerSize="0.2em"
+            shimmerColor="white"
           >
             <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
               Download Resume

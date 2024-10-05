@@ -7,7 +7,7 @@ export const projects = [
         technologies: ["React", "JavaScript", "Tailwind", "Redux"],
         category:"react",
         github:"https://github.com/itsnileshgosavi/shoppyglobe",
-        live:"https://shoppyglobe-frontend.vercel.app/"
+        live:"https://shoppyglobe.nileshgosavi.tech"
     },
     {
         id: 2,
@@ -53,11 +53,11 @@ export const projects = [
         id: 6,
         name: "ShoppyGlobe Backend",
         description: "This is the backend of ShoppyGlobe. In this, I have created various REST APIs to perform CRUD operations on the database. It's a feature-rich ecommerce app that allows users to shop online and purchase products.",
-        image: "https://i.postimg.cc/x126Fkdt/2374936.jpg",
+        image: "https://i.postimg.cc/kgHdbFsB/shop.png",
         technologies: ["Express", "MongoDB", "JavaScript", "Node"],
         category:"express",
-        github:"",
-        live:""
+        github:"https://github.com/itsnileshgosavi/shoppyglobe-backend",
+        live:"https://shoppyglobe.nileshgosavi.tech"
     },
     {
         id: 7,
@@ -67,7 +67,7 @@ export const projects = [
         technologies: ["HTML", "Javascript", "Tailwind"],
         category:"vanilla",
         github:"https://github.com/itsnileshgosavi/portfolio",
-        live:"https://nileshgosavi.tech/"
+        live:"https://portfolio.nileshgosavi.tech/"
     },
     {
         id: 8,
