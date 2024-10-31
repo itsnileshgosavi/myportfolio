@@ -21,6 +21,16 @@ export const projects = [
     },
     {
         id: 3,
+        name: "YouTube Clone",
+        description: "This is a full stack web app built with MERN stack.",
+        image: "https://i.postimg.cc/cHyBmG97/yt.png",
+        technologies: ["React", "Express", "MongoDB","Tailwind"],
+        category:"express",
+        github:"https://github.com/itsnileshgosavi/youtube-clone-backend",
+        live:"https://youtube-clone-frontend-seven.vercel.app/"
+    },
+    {
+        id: 8,
         name: "Weather Me",
         description: "Weather Me is a weather app that allows users to check the weather forecast for any city. It's a feature-rich app that allows users to check the weather forecast for any city using city name or GPS coordinates.",
         image: "https://i.postimg.cc/yYrGQ6ZG/weath.png",
@@ -69,15 +79,6 @@ export const projects = [
         github:"https://github.com/itsnileshgosavi/portfolio",
         live:"https://portfolio.nileshgosavi.tech/"
     },
-    {
-        id: 8,
-        name: "YouTube Clone",
-        description: "This is a full stack web app built with MERN stack.",
-        image: "https://i.postimg.cc/x126Fkdt/2374936.jpg",
-        technologies: ["React", "Express", "Tailwind", "MongoDB"],
-        category:"express",
-        github:"",
-        live:""
-    }
+   
 
 ]
