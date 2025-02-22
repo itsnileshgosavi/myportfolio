@@ -8,7 +8,7 @@ export const projects = [
     technologies: ["TypeScript", "Next", "MongoDB", "Auth"],
     category: "vanilla",
     github: "https://github.com/itsnileshgosavi/digital_menu",
-    live: "https:/craftmymenu.vercel.app/",
+    live: "https:/craftmymenu.com",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const projects = [
     technologies: ["React", "JavaScript", "Tailwind", "Redux"],
     category: "react",
     github: "https://github.com/itsnileshgosavi/shoppyglobe",
-    live: "https://shoppyglobe.nileshgosavi.tech",
+    live: "https://shoppyglobe-frontend.vercel.app/",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const projects = [
     technologies: ["Next.js", "React", "MongoDB", "NextAuth"],
     category: "nextjs",
     github: "https://github.com/itsnileshgosavi/Task-Master",
-    live: "https://task-manager.nileshgosavi.tech/",
+    live: "https://task-manager-nilesh.vercel.app/",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ export const projects = [
     technologies: ["React", "Javascript", "PostGres", "Next.js"],
     category: "nextjs",
     github: "https://github.com/itsnileshgosavi/logo-detector",
-    live: "https://logo-detector.nileshgosavi.tech/",
+    live: "https://logo-detector.vercel.app/",
   },
   {
     id: 6,
@@ -74,7 +74,7 @@ export const projects = [
     technologies: ["Express", "MongoDB", "JavaScript", "Node"],
     category: "express",
     github: "https://github.com/itsnileshgosavi/shoppyglobe-backend",
-    live: "https://shoppyglobe.nileshgosavi.tech",
+    live: "https://shoppyglobe-frontend.vercel.app/",
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ export const projects = [
     technologies: ["HTML", "Javascript", "Tailwind"],
     category: "vanilla",
     github: "https://github.com/itsnileshgosavi/portfolio",
-    live: "https://portfolio.nileshgosavi.tech/",
+    live: "https://nilesh-gosavii.vercel.app/",
   },
 
   {

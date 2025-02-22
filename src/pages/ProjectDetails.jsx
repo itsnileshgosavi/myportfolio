@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Card,
   CardContent,
@@ -13,7 +13,6 @@ import {
   Dialog,
   DialogContent,
   DialogTitle,
-  DialogTrigger,
 } from "@/components/ui/dialog";
 import { ExternalLink, Github, X } from "lucide-react";
 import { useParams } from "react-router-dom";
@@ -40,7 +39,7 @@ const myprojects = [
     ],
     category: "nextjs",
     githubLink: "https://github.com/itsnileshgosavi/digital_menu",
-    liveLink: "https://craftmymenu.vercel.app/",
+    liveLink: "https://craftmymenu.com/",
     screenshots: [
       "/screenshots/cmm1.png",
       "/screenshots/cmm2.png",
@@ -70,7 +69,7 @@ const myprojects = [
     techStack: ["React", "JavaScript", "Tailwind", "Redux"],
     category: "react",
     githubLink: "https://github.com/itsnileshgosavi/shoppyglobe",
-    liveLink: "https://shoppyglobe.nileshgosavi.tech",
+    liveLink: "https://shoppyglobe-frontend.vercel.app/",
     screenshots: [
       "/screenshots/sg1.png",
       "/screenshots/sg2.png",
@@ -93,7 +92,7 @@ const myprojects = [
     techStack: ["Next.js", "React", "MongoDB", "NextAuth"],
     category: "nextjs",
     githubLink: "https://github.com/itsnileshgosavi/Task-Master",
-    liveLink: "https://task-manager.nileshgosavi.tech/",
+    liveLink: "https://task-manager-nilesh.vercel.app/",
     screenshots: [
       "/screenshots/tm1.png",
       "/screenshots/tm2.png",
@@ -149,7 +148,7 @@ const myprojects = [
     techStack: ["React", "Javascript", "PostGres", "Next.js"],
     category: "nextjs",
     githubLink: "https://github.com/itsnileshgosavi/logo-detector",
-    liveLink: "https://logo-detector.nileshgosavi.tech/",
+    liveLink: "https://logo-detector.vercel.app/",
     screenshots: [
       "/screenshots/ld1.png",
       "/screenshots/ld2.png",
@@ -183,7 +182,7 @@ const myprojects = [
     techStack: ["Express", "MongoDB", "JavaScript", "Node"],
     category: "express",
     githubLink: "https://github.com/itsnileshgosavi/shoppyglobe-backend",
-    liveLink: "https://shoppyglobe.nileshgosavi.tech",
+    liveLink: "https://shoppyglobe-frontend.vercel.app/",
     screenshots: [
       "/screenshots/sg1.png",
       "/screenshots/sg2.png",
@@ -206,7 +205,7 @@ const myprojects = [
     techStack: ["HTML", "Javascript", "Tailwind"],
     category: "vanilla",
     githubLink: "https://github.com/itsnileshgosavi/portfolio",
-    liveLink: "https://portfolio.nileshgosavi.tech/",
+    liveLink: "https://nilesh-gosavii.vercel.app/",
     screenshots: [
       "/screenshots/pf1.png",
       "/screenshots/pf2.png",
