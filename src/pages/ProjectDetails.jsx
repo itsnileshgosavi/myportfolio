@@ -69,7 +69,7 @@ const myprojects = [
     techStack: ["React", "JavaScript", "Tailwind", "Redux"],
     category: "react",
     githubLink: "https://github.com/itsnileshgosavi/shoppyglobe",
-    liveLink: "https://shoppyglobe-frontend.vercel.app/",
+    liveLink: "https://shoppyglobe-backend.vercel.app/",
     screenshots: [
       "/screenshots/sg1.png",
       "/screenshots/sg2.png",
@@ -182,7 +182,7 @@ const myprojects = [
     techStack: ["Express", "MongoDB", "JavaScript", "Node"],
     category: "express",
     githubLink: "https://github.com/itsnileshgosavi/shoppyglobe-backend",
-    liveLink: "https://shoppyglobe-frontend.vercel.app/",
+    liveLink: "https://shoppyglobe-backend.vercel.app/",
     screenshots: [
       "/screenshots/sg1.png",
       "/screenshots/sg2.png",

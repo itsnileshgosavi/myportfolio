@@ -19,7 +19,7 @@ export const projects = [
     technologies: ["React", "JavaScript", "Tailwind", "Redux"],
     category: "react",
     github: "https://github.com/itsnileshgosavi/shoppyglobe",
-    live: "https://shoppyglobe-frontend.vercel.app/",
+    live: "https://shoppyglobe-backend.vercel.app/",
   },
   {
     id: 3,
@@ -74,7 +74,7 @@ export const projects = [
     technologies: ["Express", "MongoDB", "JavaScript", "Node"],
     category: "express",
     github: "https://github.com/itsnileshgosavi/shoppyglobe-backend",
-    live: "https://shoppyglobe-frontend.vercel.app/",
+    live: "https://shoppyglobe-backend.vercel.app/",
   },
   {
     id: 8,
